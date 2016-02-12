@@ -1,0 +1,105 @@
+#ifndef DDMI_CALIBRATION_H
+#define DDMI_CALIBRATION_H
+
+
+   
+   
+
+#define PORT_0_TX_DDM_DB		-4.788
+#define PORT_1_TX_DDM_DB		-4.655
+#define PORT_2_TX_DDM_DB		-5.358
+#define PORT_3_TX_DDM_DB		-5.358
+#define PORT_4_TX_DDM_DB		-4.545
+#define PORT_5_TX_DDM_DB		-5.003
+#define PORT_6_TX_DDM_DB		-4.604
+#define PORT_7_TX_DDM_DB		-5.491
+#define PORT_8_TX_DDM_DB		-4.961
+#define PORT_9_TX_DDM_DB		-4.515
+
+#define PORT_0_TX_REAL_DB		-4.55
+#define PORT_1_TX_REAL_DB		-5.25
+#define PORT_2_TX_REAL_DB		-5.10
+#define PORT_3_TX_REAL_DB		-6.45
+#define PORT_4_TX_REAL_DB		-4.48
+#define PORT_5_TX_REAL_DB		-4.93
+#define PORT_6_TX_REAL_DB		-4.64
+#define PORT_7_TX_REAL_DB		-5.40
+#define PORT_8_TX_REAL_DB		-4.72
+#define PORT_9_TX_REAL_DB		-4.35
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For calibration please substract constants defined below from values received on DDM readings */
+#define PORT_0_TX_DB		-0.077	//CIB1410180319 OK
+#define PORT_1_TX_DB		 0.564	//CIB1410180344 ok
+#define PORT_2_TX_DB		-0.068	//CIB1410180345 OK
+#define PORT_3_TX_DB		 0.192	//CIB1410180356 ok
+#define PORT_4_TX_DB		 0.071	//CIB1410180361 OK
+#define PORT_5_TX_DB		 0.177	//CIB1410180378 ok
+#define PORT_6_TX_DB		 0.253	//CIB1410180384 OK
+#define PORT_7_TX_DB		 0.179	//CIB1410180396 ok
+#define PORT_8_TX_DB		-0.031	//CIB1410180403 OK
+#define PORT_9_TX_DB		 0.141	//CIB1410180405 ok
+
+#define PORT_0_RX_DB		 0.717	//CIB1410180319
+#define PORT_1_RX_DB		 0.208	//CIB1410180344
+#define PORT_2_RX_DB		 0.158	//CIB1410180345
+#define PORT_3_RX_DB		 0.427	//CIB1410180356
+#define PORT_4_RX_DB		 0.861	//CIB1410180361
+#define PORT_5_RX_DB		 0.698	//CIB1410180378
+#define PORT_6_RX_DB		 0.277	//CIB1410180384
+#define PORT_7_RX_DB		 0.827	//CIB1410180396
+#define PORT_8_RX_DB		 0.722	//CIB1410180403
+#define PORT_9_RX_DB		-0.578	//CIB1410180405
+
+float local_tx_calibration[10] = {PORT_0_TX_DB, PORT_1_TX_DB, PORT_2_TX_DB, PORT_3_TX_DB, PORT_4_TX_DB,
+                                  PORT_5_TX_DB, PORT_6_TX_DB, PORT_7_TX_DB, PORT_8_TX_DB, PORT_9_TX_DB};
+
+float local_rx_calibration[10] = {PORT_0_RX_DB, PORT_1_RX_DB, PORT_2_RX_DB, PORT_3_RX_DB, PORT_4_RX_DB,
+                                  PORT_5_RX_DB, PORT_6_RX_DB, PORT_7_RX_DB, PORT_8_RX_DB, PORT_9_RX_DB};
+
+
+#define REMOTE_0_TX_DB		-0.27	//1111122201
+#define REMOTE_1_TX_DB		 0.02	//1111122202
+#define REMOTE_2_TX_DB		-0.01	//1111122203
+#define REMOTE_3_TX_DB		 1.16	//1111122204
+#define REMOTE_4_TX_DB		 0.33	//1143506628
+#define REMOTE_5_TX_DB		 0.32	//1111122206
+#define REMOTE_6_TX_DB		 0.522	//1111122207 uszkodzony
+#define REMOTE_7_TX_DB		 0.45	//1111122208
+#define REMOTE_8_TX_DB		 0.365	//1111122209
+#define REMOTE_9_TX_DB		 0.23	//1111122210
+
+#define REMOTE_0_RX_DB		 0.266	//1111122201
+#define REMOTE_1_RX_DB		 0.451	//1111122202
+#define REMOTE_2_RX_DB		 0.673	//1111122203
+#define REMOTE_3_RX_DB		 0.786	//1111122204
+#define REMOTE_4_RX_DB		 0.864	//1143506628
+#define REMOTE_5_RX_DB		 0.371	//1111122206
+#define REMOTE_6_RX_DB		-0.050	//1111122207 uszkodzony tx
+#define REMOTE_7_RX_DB		 0.317	//1111122208
+#define REMOTE_8_RX_DB		-0.040	//1111122209
+#define REMOTE_9_RX_DB		 0.137	//1111122210
+
+float remote_tx_calibration[10] = {REMOTE_0_TX_DB, REMOTE_1_TX_DB, REMOTE_2_TX_DB, REMOTE_3_TX_DB, REMOTE_4_TX_DB,
+                                  REMOTE_5_TX_DB, REMOTE_6_TX_DB, REMOTE_7_TX_DB, REMOTE_8_TX_DB, REMOTE_9_TX_DB};
+
+float remote_rx_calibration[10] = {REMOTE_0_RX_DB, REMOTE_1_RX_DB, REMOTE_2_RX_DB, REMOTE_3_RX_DB, REMOTE_4_RX_DB,
+                                  REMOTE_5_RX_DB, REMOTE_6_RX_DB, REMOTE_7_RX_DB, REMOTE_8_RX_DB, REMOTE_9_RX_DB};
+
+
+#endif
+
+
+
